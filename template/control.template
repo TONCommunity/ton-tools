@@ -1,0 +1,9 @@
+"control" : [
+  { "id" : SERVER,
+    "port" : PORT,
+    "allowed" : [
+      { "id" : CLIENT,
+        "permissions" : 15
+      }
+    ]
+  }
