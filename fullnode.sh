@@ -18,7 +18,7 @@ export FIFTPATH=${FIFTPATH}
 export PATH=${TON_ROOT_DIR}/bin:$PATH
 
 rm -fr ${TON_WORK_DIR}
-mkdir -p ${TON_WORK_DIR}/{etc,db,keys}
+mkdir -p ${TON_WORK_DIR}/{etc,db,keys,logs}
 mkdir -p ${TON_WORK_DIR}/db/{static,import,keyring}
 
 cp ${TEMPLATE_DIR}/$GLOBAL_CONFIG_FILE ${TON_WORK_DIR}/etc/
@@ -42,6 +42,6 @@ sed -e "s~\"liteservers\"\ \:\ \[~$LITESERVERS~g" ${TON_WORK_DIR}/db/config.json
 mv -f config.json.liteservers ${TON_WORK_DIR}/db/config.json
 
 cd ${TON_WORK_DIR}
-nohup validator-engine -v 0 -C ${TON_WORK_DIR}/etc/$GLOBAL_CONFIG_FILE --db ${TON_WORK_DIR}/db -l ${TON_WORK_DIR}/log > validator.log 2>&1 &
+nohup validator-engine -v 0 -C ${TON_WORK_DIR}/etc/$GLOBAL_CONFIG_FILE --db ${TON_WORK_DIR}/db -l ${TON_WORK_DIR}/logs/ton > validator.log 2>&1 &
 
 exit 0
