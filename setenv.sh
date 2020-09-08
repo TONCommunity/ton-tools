@@ -17,7 +17,7 @@ CONSOLE_PORT=53763
 
 # 
 TON_WORK_DIR=/data
-TON_SRC_DIR=${TON_WORK_DIR}/ton/ton_source
+TON_SRC_DIR=${TON_WORK_DIR}/ton/resource
 TON_BUILD_DIR=${TON_WORK_DIR}/ton/build
 TON_ROOT_DIR=${TON_WORK_DIR}/ton/bin
 TON_DHT_DIR=${TON_WORK_DIR}/dht
