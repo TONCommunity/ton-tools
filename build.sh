@@ -24,7 +24,7 @@ EOF
 		1)
 			echo "INFO: install dependencies ..."
 			yum update -y
-			yum install -y gcc gcc-c++ gdb cmake ccache make git texlive texlive-*.noarch ghostscript
+			yum install -y gcc gcc-c++ gdb cmake ccache make git wget tar texlive texlive-*.noarch ghostscript
 			yum install -y zlib-devel openssl-devel readline-devel gsl-devel
 			# install libmicrohttpd-devel
 			wget https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.70.tar.gz
@@ -44,7 +44,7 @@ EOF
 		2)
 			echo "INFO: install dependencies ..."
 			apt update -y
-			apt install -y build-essential git cargo ccache cmake curl gawk gcc gperf g++
+			apt install -y build-essential git cargo ccache cmake curl gawk gcc gperf g++ wget tar
 			apt install -y libgflags-dev libmicrohttpd-dev libreadline-dev libssl-dev libz-dev ninja-build pkg-config zlib1g-dev
 			curl https://sh.rustup.rs -sSf | sh -s -- -y
 			. "$HOME/.cargo/env"

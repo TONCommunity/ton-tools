@@ -16,10 +16,10 @@ LITE_PORT=53762
 CONSOLE_PORT=53763
 
 # 
-TON_SRC_DIR=~/ton_source
-TON_BUILD_DIR=~/build
-TON_ROOT_DIR=~/toncommunity
 TON_WORK_DIR=/data
+TON_SRC_DIR=${TON_WORK_DIR}/ton/ton_source
+TON_BUILD_DIR=${TON_WORK_DIR}/ton/build
+TON_ROOT_DIR=${TON_WORK_DIR}/ton/bin
 TON_DHT_DIR=${TON_WORK_DIR}/dht
 FIFTPATH=${TON_ROOT_DIR}/lib/fift
 
