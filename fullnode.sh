@@ -17,7 +17,7 @@ TEMPLATE_DIR=${SCRIPT_DIR}/template
 export FIFTPATH=${FIFTPATH}
 export PATH=${TON_ROOT_DIR}/bin:$PATH
 
-rm -fr ${TON_WORK_DIR}
+# rm -fr ${TON_WORK_DIR}
 mkdir -p ${TON_WORK_DIR}/{etc,db,keys,logs}
 mkdir -p ${TON_WORK_DIR}/db/{static,import,keyring}
 
