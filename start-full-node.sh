@@ -14,6 +14,6 @@ SCRIPT_DIR=$(cd `dirname $0`; pwd)
 
 export PATH=${TON_ROOT_DIR}/bin:$PATH
 
-validator-engine -d -v 0 -C ${TON_WORK_DIR}/etc/$GLOBAL_CONFIG_FILE --db ${TON_WORK_DIR}/db -l ${TON_WORK_DIR}/logs/ton
+validator-engine -d -v 0 -C ${TON_WORK_DIR}/etc/$GLOBAL_CONFIG_FILE --db ${TON_WORK_DIR}/db -l ${TON_WORK_DIR}/logs/ton &
 
 exit 0
