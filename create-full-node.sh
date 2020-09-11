@@ -42,6 +42,6 @@ sed -e "s~\"liteservers\"\ \:\ \[~$LITESERVERS~g" ${TON_WORK_DIR}/db/config.json
 mv -f config.json.liteservers ${TON_WORK_DIR}/db/config.json
 
 cd ${TON_WORK_DIR}
-validator-engine -C ${TON_WORK_DIR}/etc/$GLOBAL_CONFIG_FILE --db ${TON_WORK_DIR}/db -l ${TON_WORK_DIR}/logs/ton &
+validator-engine -d -C ${TON_WORK_DIR}/etc/$GLOBAL_CONFIG_FILE --db ${TON_WORK_DIR}/db -l ${TON_WORK_DIR}/logs/ton &
 
 exit 0
