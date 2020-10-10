@@ -9,7 +9,11 @@ setenv.sh&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;&nbsp; Define environment variables whi
 
 build.sh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --&nbsp;&nbsp; Compile TON's source code and install relative program.
 
-fullnode.sh &nbsp;--&nbsp;&nbsp; Automatic build Full-Node program on your device.
+create-full-node.sh&nbsp;--&nbsp;&nbsp; Automatic build Full-Node program on your device.
+
+start-full-node.sh&nbsp;--&nbsp;&nbsp; Full-Node program startup script.
+
+install.sh&nbsp;--&nbsp;&nbsp; Install Full-Node program by ton binary file. 
 
 ---
 
@@ -36,6 +40,6 @@ Stage 3 -- Create Full-Node application if you want
 Now, if you want to create a Full-Node of ton blockchain, you can use the `fullnode.sh`:
 
 ```
-./fullnode.sh
+./create-full-node.sh
 ```
 
