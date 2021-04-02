@@ -24,7 +24,7 @@ TON_DHT_DIR=${TON_WORK_DIR}/dht
 FIFTPATH=${TON_ROOT_DIR}/lib/fift
 
 #
-TON_GITHUB_REPO="https://github.com/ton-blockchain/ton.git"
+TON_GITHUB_REPO="https://github.com/TONCommunity/ton.git"
 TON_GITHUB_COMMIT_ID="master"
 
 #
